@@ -1,3 +1,11 @@
 .card-body a {
   word-break: break-all;
 }
+
+#weather-icon img {
+size: 80%;
+}
+
+#forecast h4 {
+  font-size: smaller;
+}
