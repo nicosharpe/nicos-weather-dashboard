@@ -4,6 +4,8 @@ https://nicosharpe.github.io/nicos-weather-dashboard/
 
 A 5 Day Weather Forecast to retrieve weather data for cities.
 
+<img src="./images/Screenshot 2024-01-30 225253.png">
+
 
 # Installation
 
