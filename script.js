@@ -30,7 +30,7 @@ $(document).ready(function () {
   $("#city-search").on("click", function (event) {
     event.preventDefault();
     var searchTerm = $("#search-input").val().trim();
-    var geoQueryURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + searchTerm + "&limit=1&appid=1b80d8a7edd459f41fc968c54929e7ff";
+    var geoQueryURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + searchTerm + "&limit=1&appid=1b80d8a7edd459f41fc968c54929e7ff";
     var todaysDate = dayjs().format("DD[/]MM[/]YY");
 
     // Creates a Fetch call
@@ -49,7 +49,7 @@ $(document).ready(function () {
         console.log(lon);
 
         // Second API request using latitude and longitude
-        var weatherQueryURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&mode=json&units=metric&appid=1b80d8a7edd459f41fc968c54929e7ff";
+        var weatherQueryURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&mode=json&units=metric&appid=1b80d8a7edd459f41fc968c54929e7ff";
 
         console.log(weatherQueryURL);
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
         // Display weather icon
         var iconCode = data.list[0].weather[0].icon;
-        var iconUrl = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+        var iconUrl = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
         $("#weather-icon").attr("src", iconUrl).attr("alt", "Weather Icon");
 
         // Save the searched city to localStorage
